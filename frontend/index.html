@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Assistant</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        #transcript { border: 1px solid #ddd; min-height: 300px; padding: 15px; margin: 20px 0; }
+        .user-message { color: blue; margin: 10px 0; }
+        .ai-response { color: green; margin: 10px 0; }
+        .loading { color: gray; font-style: italic; }
+        .error { color: red; }
+        #status { margin: 10px 0; padding: 5px; }
+        .status-idle { background: #f0f0f0; }
+        .status-recording { background: #ffcccc; }
+        .status-processing { background: #ffffcc; }
+        .status-error { background: #ffdddd; }
+        button { padding: 10px 15px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Interview Assistant</h1>
+    <div id="status" class="status-idle">Ready</div>
+    <button id="start-button">Start Recording</button>
+    <div id="transcript"></div>
+    <script src="app.js"></script>
+</body>
+</html>
